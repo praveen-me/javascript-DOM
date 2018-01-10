@@ -5,8 +5,8 @@ This is a repo when i learning DOM. So, I want to share it.
 The **Document Object Model (DOM)** specifies how browsers should create a model of an HTML page and how JavaScript can access and update the contents of a web page while it is in the browser window.
 
 ## Table of Contents
-- [Making Model of HTML Page](making-model-of-html-page)
-- [Working with DOM tree](working-with-dom-tree)
+- [Making Model of HTML Page](#making-model-of-html-page)
+- [Working with DOM tree](#working-with-dom-tree)
 - [Select an Individual Node](select-an-individual-node)
 - [Select Multiple Elemets(NodeLists)](select-multiple-elements-nodelists)
 - [Transversing b/w Elements Nodes](transversing-b/w-elements-nodes)
