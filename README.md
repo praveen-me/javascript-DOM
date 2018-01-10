@@ -8,7 +8,7 @@ The **Document Object Model (DOM)** specifies how browsers should create a model
 - [Making Model of HTML Page](#making-model-of-html-page)
 - [Working with DOM tree](#working-with-dom-tree)
 - [Select an Individual Node](#select-an-individual-node)
-- [Select Multiple Elemets(NodeLists)](#select-multiple-elements-nodelists)
+- [Select Multiple Elements(NodeLists)](#select-multiple-elements-nodelists)
 - [Transversing b/w Elements Nodes](#transversing-b/w-elements-nodes)
 - [Work on Element](#work-on-element)
 - [Work with HTML Content](#work-with-html-content)
@@ -60,7 +60,7 @@ Uses the value of an element's id attribute
 2. `querySelector()`<br />
 Uses a CSS selectors, and returns the first matching element.
 
-#### Select Multiple Elemets(NodeLists)
+#### Select Multiple Elements(NodeLists)
 1. `getElementsByClassName()`<br />
 Selects all elements that have a specific value for their class attribute.
 2. `getElementsByTagName()`<br />
