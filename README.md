@@ -55,7 +55,7 @@ Access and updating the DOM tree involves two steps:-
 - Use it's text content, child elements, and attributes.
 
 ##### Access the Elements:
-1. `getElementById()`
+1. `getElementById()`<br />
 Uses the value of an element's id attribute
 
 
