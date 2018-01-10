@@ -8,7 +8,7 @@ The **Document Object Model (DOM)** specifies how browsers should create a model
 - [Making Model of HTML Page](#making-model-of-html-page)
 - [Working with DOM tree](#working-with-dom-tree)
 - [Select an Individual Node](#select-an-individual-node)
-- [Select Multiple Elements(NodeLists)](#select-multiple-elements-nodelists)
+- [Select Multiple Elements](#select-multiple-elements)
 - [Transversing b/w Elements Nodes](#transversing-b/w-elements-nodes)
 - [Work on Element](#work-on-element)
 - [Work with HTML Content](#work-with-html-content)
