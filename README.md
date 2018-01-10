@@ -54,3 +54,8 @@ Access and updating the DOM tree involves two steps:-
 - Locate the node that represents the element you want to work with.
 - Use it's text content, child elements, and attributes.
 
+##### Access the Elements:
+1. `getElementById()`
+Uses the value of an element's id attribute
+
+
