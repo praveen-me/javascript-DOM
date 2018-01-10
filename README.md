@@ -55,7 +55,27 @@ Access and updating the DOM tree involves two steps:-
 - Use it's text content, child elements, and attributes.
 
 ##### Access the Elements:
+
+Select an individual element:-
 1. `getElementById()`<br />
 Uses the value of an element's id attribute
+2. `querySelector()`<br />
+Uses a CSS selectors, and returns the first matching element.
+
+Select multiple elements(nodelist):-
+1. `getElementsByClassName()`<br />
+Selects all elements that have a specific value for their class attribute.
+2. `getElementsByTagName()`<br />
+Selects all eleement that have the specified tag name.
+3. `querySelectorAll()`<br />
+Uses a  CSS selector to match all amtching elements.
+
+Tranversing b/w elements nodes:-
+1. `parentNode`<br/>
+Selects the parent of the  current element node.
+2.
+
+
+
 
 
