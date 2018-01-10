@@ -60,7 +60,7 @@ Uses the value of an element's id attribute
 2. `querySelector()`<br />
 Uses a CSS selectors, and returns the first matching element.
 
-#### Select Multiple Elements(NodeLists)
+#### Select Multiple Elements
 1. `getElementsByClassName()`<br />
 Selects all elements that have a specific value for their class attribute.
 2. `getElementsByTagName()`<br />
