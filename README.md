@@ -22,3 +22,28 @@ The **Document Object Model (DOM)** specifies how browsers should create a model
 - [The item() method](the-item-method)
 - [The Array Method](the-array-method)
 - [Selecting Elements using Class attributes](selecting-elements-using-class-attributes)
+- [Selecting Elements by Tag name](selecting-elements-by-tag-name)
+- [Selecting Elements Using CSS Selectors](selecting-elements-using-selectors)
+- [Repeating Actions for Entire NodeList](repeating-actions-for-entire-nodelist)
+- [Looping Through a NodeList](looping-through-a-nodelist)
+- [Tranversing the DOM](transversing-the-dom)
+- [Previous and Next Sibling](pravious-and-next-sibling)
+- [First and Last Child](first-and-last-child)
+- [Access and Update a Text Node with NodeValue](access-and-update-a-text-node-with-nodevalue)
+- [Accessing and Changing a Text Node](accessing-and-changing-a-text-node)
+- [Accessing and Update text with TextContent](accessing-and-update-text-with-textContent)
+- [Accessing Text Only](accessing-text-only)
+- [Adding or Removing HTML content](adding-or-removing-html-content)
+- [Cross Site Scripting(XSS)](cross-site-scripting)
+- [Attribute Nodes](attribute-nodes)
+- [Check for an Attribute and Get it's Values](check-for-an-attribute-and-get-its-values)
+
+
+### Making Model of HTML Page
+When the browser loads a web page, it creates a model of the page in the memory. The DOM is called an object model (the DOM tree) is made of objects.
+Each object represents a different part of the page located in the browser window.
+It makes by using four types of node:
+- Document Node
+- Element Node
+- Attribute Node
+- Text Node
