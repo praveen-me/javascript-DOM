@@ -73,7 +73,12 @@ Uses a  CSS selector to match all amtching elements.
 Tranversing b/w elements nodes:-
 1. `parentNode`<br/>
 Selects the parent of the  current element node.
-2.
+2. `previousSibling / nextSibling`<br/>
+Selects the previous or next sibling from the DOM tree.
+3. `firstChild / lastChild`<br/>
+Selects the first or last child of the current element.
+
+
 
 
 
