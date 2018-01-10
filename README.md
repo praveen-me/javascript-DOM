@@ -9,7 +9,7 @@ The **Document Object Model (DOM)** specifies how browsers should create a model
 - [Working with DOM tree](#working-with-dom-tree)
 - [Select an Individual Node](#select-an-individual-node)
 - [Select Multiple Elements](#select-multiple-elements)
-- [Transversing b/w Elements Nodes](#transversing-b/w-elements-nodes)
+- [Transversing Elements Nodes](#transversing-elements-nodes)
 - [Work on Element](#work-on-element)
 - [Work with HTML Content](#work-with-html-content)
 - [Access or Update Attribute values](#access-or-update-attribute-values)
@@ -68,7 +68,7 @@ Selects all eleement that have the specified tag name.
 3. `querySelectorAll()`<br />
 Uses a  CSS selector to match all amtching elements.
 
-#### Transversing b/w Elements Nodes
+#### Transversing Elements Nodes
 1. `parentNode`<br/>
 Selects the parent of the  current element node.
 2. `previousSibling / nextSibling`<br/>
