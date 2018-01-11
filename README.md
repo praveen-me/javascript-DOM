@@ -10,10 +10,9 @@ The **Document Object Model (DOM)** specifies how browsers should create a model
 - [Select an Individual Node](#select-an-individual-node)
 - [Select Multiple Elements](#select-multiple-elements)
 - [Transversing Elements Nodes](#transversing-elements-nodes)
-- [Work on Element](#work-on-element)
+- [Work on Elements](#work-on-elements)
 - [Work with HTML Content](#work-with-html-content)
 - [Access or Update Attribute values](#access-or-update-attribute-values)
-- [Methods that return One or More Elements(As a NodeList)](#method-that-return-one-or-more-elements-as-a-nodelists)
 - [Selecting Elements using ID attributes](#selecting-elements-using-id-attribute)
 - [NodeList : DOM queries that return More than one Element](#nodelists-dom-queries-that-return-more-than-one-element)
 - [Live NodeList](#live-nodelist)
@@ -75,6 +74,26 @@ Selects the parent of the  current element node.
 Selects the previous or next sibling from the DOM tree.
 3. `firstChild / lastChild`<br/>
 Selects the first or last child of the current element.
+
+#### Work on Elements
+We can access or update content of a text node by `nodeValue`.
+
+#### Work with HTML Content
+These methods let us create nodes, add nodes to a tree and remove nodes from tree. These are:-<br/>
+- `createElement()`
+- `createTextNode()`
+- `appendChild() / removeChild()`
+
+#### Access or Update Attribute value
+- `className / id`
+- `hasAttribute()`
+- `getAttribute()`
+- `setAttribute()`
+- `removeAttribute()`
+
+#### Selecting Elements using ID attributes
+``` var set_one = document.getElementById('one');
+set_one.className = 'cool';```
 
 
 
