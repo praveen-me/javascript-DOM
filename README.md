@@ -13,7 +13,7 @@ The **Document Object Model (DOM)** specifies how browsers should create a model
 - [Work on Elements](#work-on-elements)
 - [Work with HTML Content](#work-with-html-content)
 - [Access or Update Attribute values](#access-or-update-attribute-values)
-- [Selecting Elements using ID attributes](#selecting-elements-using-id-attribute)
+- [Selecting Elements using ID attributes](#selecting-elements-using-id-attributes)
 - [NodeList : DOM queries that return More than one Element](#nodelists-dom-queries-that-return-more-than-one-element)
 - [Live NodeList](#live-nodelist)
 - [Static NodeList](#static-nodelist)
