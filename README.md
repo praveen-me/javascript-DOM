@@ -92,8 +92,10 @@ These methods let us create nodes, add nodes to a tree and remove nodes from tre
 - `removeAttribute()`
 
 #### Selecting Elements using ID attributes
-``` var set_one = document.getElementById('one');
-set_one.className = 'cool';```
+```
+var set_one = document.getElementById('one');
+set_one.className = 'cool';
+```
 
 
 
