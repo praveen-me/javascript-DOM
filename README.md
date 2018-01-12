@@ -20,7 +20,7 @@ The **Document Object Model (DOM)** specifies how browsers should create a model
 - [Selecting an Element from a NodeList](#selecting-an-element-from-a-nodelist)
 - [Selecting Elements using Class attributes](#selecting-elements-using-class-attributes)
 - [Selecting Elements by Tag name](#selecting-elements-by-tag-name)
-- [Selecting Elements Using CSS Selectors](#selecting-elements-using-selectors)
+- [Selecting Elements Using CSS Selectors](#selecting-elements-using-css-selectors)
 - [Repeating Actions for Entire NodeList](#repeating-actions-for-entire-nodelist)
 - [Looping Through a NodeList](#looping-through-a-nodelist)
 - [Tranversing the DOM](#transversing-the-dom)
@@ -262,6 +262,39 @@ Once we have an element node, we can use other properties and methods on that el
 There are  two steps accessing and updating attributes:-
 - First, select the element node that carries the attribute and follow it with a period symbol.
 - Then, use one of the methods or property below to work with that elemntt's attributes.<br/>
+
+__Methods__
+- `getAttribute()`
+- `hasAtrtribute()`
+- `setAttribute()`
+- `removeAttribute()`
+
+__Property__
+- `className`
+- `id`
+
+##### Getting Attribute:-
+```
+var element = document.getElemntById('one');
+if(element.hasAttribute('class'))
+  document.getElementById('get_it').textContent = 'The first item has a class name '+element.getAttribute('class');
+}
+```
+##### Changing Attribute and Changing their values:-
+```
+var element = document.getElementById('one');
+element.className = 'cool';
+var fourthItem = document.getElementByTagName('li')[3];
+fourthItem.setAttribute('class', 'cool');
+```
+
+##### Removing Attribute:
+```
+var element = document.getElementById('one');
+if(element.hasAttribute('class')){
+  element.removeAttribute('class');
+}
+  
 
 
 
