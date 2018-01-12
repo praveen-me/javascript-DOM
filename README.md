@@ -14,7 +14,7 @@ The **Document Object Model (DOM)** specifies how browsers should create a model
 - [Work with HTML Content](#work-with-html-content)
 - [Access or Update Attribute values](#access-or-update-attribute-values)
 - [Selecting Elements using ID attributes](#selecting-elements-using-id-attributes)
-- [NodeList : DOM queries that return More than one Element](#nodelists-dom-queries-that-return-more-than-one-element)
+- [NodeList : DOM queries that return More than one Element](#nodelists-:-dom-queries-that-return-more-than-one-element)
 - [Live NodeList](#live-nodelist)
 - [Static NodeList](#static-nodelist)
 - [Selecting an Element from a NodeList](#selecting-an-element-from-a-nodelist)
@@ -96,6 +96,15 @@ These methods let us create nodes, add nodes to a tree and remove nodes from tre
 var set_one = document.getElementById('one');
 set_one.className = 'cool';
 ```
+#### NodeList : DOM queries that return More than one Element
+When a DOM method can return more than one element, it returns a NodeList(even a nodeList is a collection of elements nodes.Each node is given an index number(a number that start at zero, just like an array).<br/>
+When a DOM query returns a NodeList we may want to:-<br/>
+- Select one element from the nodeList.
+- Loop through each item in the nodeList and perform the same statement on each of the elements nodes.
+NodeList look like array and are numbered like array, but they are not actually arrays, they are a type of collection called **collection**.<br/>
+- The `length` property tells us how many item are in nodeList.
+- The `item()` method returns a specific node from the nodeList when we tell it the index number of the item.
+
 
 
 
