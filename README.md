@@ -96,7 +96,7 @@ These methods let us create nodes, add nodes to a tree and remove nodes from tre
 var set_one = document.getElementById('one');
 set_one.className = 'cool';
 ```
-#### NodeList : DOM queries that return More than one Element
+#### NodeList DOM queries that return More than one Element
 When a DOM method can return more than one element, it returns a NodeList(even a nodeList is a collection of elements nodes.Each node is given an index number(a number that start at zero, just like an array).<br/>
 When a DOM query returns a NodeList we may want to:-<br/>
 - Select one element from the nodeList.
