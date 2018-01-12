@@ -84,7 +84,7 @@ These methods let us create nodes, add nodes to a tree and remove nodes from tre
 - `createTextNode()`
 - `appendChild() / removeChild()`
 
-#### Access or Update Attribute value
+#### Access or Update Attribute values
 - `className / id`
 - `hasAttribute()`
 - `getAttribute()`
