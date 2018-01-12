@@ -23,17 +23,15 @@ The **Document Object Model (DOM)** specifies how browsers should create a model
 - [Selecting Elements Using CSS Selectors](#selecting-elements-using-css-selectors)
 - [Repeating Actions for Entire NodeList](#repeating-actions-for-entire-nodelist)
 - [Looping Through a NodeList](#looping-through-a-nodelist)
-- [Tranversing the DOM](#transversing-the-dom)
-- [Previous and Next Sibling](#pravious-and-next-sibling)
+- [Transversing the DOM](#transversing-the-dom)
+- [Previous and Next Sibling](#previous-and-next-sibling)
 - [First and Last Child](#first-and-last-child)
-- [Access and Update a Text Node with NodeValue](#access-and-update-a-text-node-with-nodevalue)
-- [Accessing and Changing a Text Node](#accessing-and-changing-a-text-node)
-- [Accessing and Update text with TextContent](#accessing-and-update-text-with-textContent)
+- [Accessing and Update text with TextContent](#accessing-and-update-text-with-textcontent)
 - [Accessing Text Only](#accessing-text-only)
 - [Adding or Removing HTML content](#adding-or-removing-html-content)
 - [Cross Site Scripting](#cross-site-scripting)
 - [Attribute Nodes](#attribute-nodes)
-- [Check for an Attribute and Get it's Values](#check-for-an-attribute-and-get-its-values)
+
 
 
 ### Making Model of HTML Page
@@ -173,7 +171,7 @@ if(element.length > 0){
 }
 ```
 
-#### Tranversing the DOM
+#### Transversing the DOM
 When we have an element node, we can select another element in relation to it using thses five properties:-
 - `parentNode`
 - `previousSibling / nextSibling`
@@ -210,7 +208,7 @@ There are two ways to adding and removing content from a DOM tree:-
 - The `innerHTML` property and
 - DOM Manipulation method
 
-##### 1. The `nnerHTML`method
+##### 1. The `innerHTML`method
 The `innerHTML` can be used on any element node. It is used both to retrieve and replace content. To update an element, new content is provided as a string. It can contain markup for descendent elements.
 
 ##### 2. The DOM Manipulation
@@ -294,6 +292,7 @@ var element = document.getElementById('one');
 if(element.hasAttribute('class')){
   element.removeAttribute('class');
 }
+```
   
 
 
