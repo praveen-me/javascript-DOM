@@ -100,10 +100,11 @@ set_one.className = 'cool';
 When a DOM method can return more than one element, it returns a NodeList(even a nodeList is a collection of elements nodes.Each node is given an index number(a number that start at zero, just like an array).<br/>
 When a DOM query returns a NodeList we may want to:-<br/>
 - Select one element from the nodeList.
-- Loop through each item in the nodeList and perform the same statement on each of the elements nodes.
+- Loop through each item in the nodeList and perform the same statement on each of the elements nodes.<br/>
 NodeList look like array and are numbered like array, but they are not actually arrays, they are a type of collection called **collection**.<br/>
 - The `length` property tells us how many item are in nodeList.
 - The `item()` method returns a specific node from the nodeList when we tell it the index number of the item.
+
 
 
 
