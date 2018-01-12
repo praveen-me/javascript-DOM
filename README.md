@@ -31,7 +31,7 @@ The **Document Object Model (DOM)** specifies how browsers should create a model
 - [Accessing and Update text with TextContent](#accessing-and-update-text-with-textContent)
 - [Accessing Text Only](#accessing-text-only)
 - [Adding or Removing HTML content](#adding-or-removing-html-content)
-- [Cross Site Scripting(XSS)](#cross-site-scripting)
+- [Cross Site Scripting](#cross-site-scripting)
 - [Attribute Nodes](#attribute-nodes)
 - [Check for an Attribute and Get it's Values](#check-for-an-attribute-and-get-its-values)
 
@@ -230,9 +230,39 @@ element.innerHTML='<a href=\"http://www.github.com\">'+element.innerHTML+'</a>'
 DOM Manipulation offers another technique to add new content to a page (rather than `innerHTML`). It involves three steps:-</br>
 - Create the Element<br/>
 `createElement()`
-- ive it Content<br/>
+- Give it Content<br/>
 `createTextNode()`
-- pp
+- Append it to the DOM<br/>
+`appendChild()`
+
+```
+var n_element = document.createElement('li');
+var n_textNode = document.createTextNode('Ice Cream');
+n_element.appendChild(n_textNode);
+var position = document.getElementByTagName('ul')[0];
+position.appendChild(n_element);
+```
+###### 3. Removing an Element from the DOM tree:
+The method removeChild() uses to remove that element which we want to remove.<br/>
+```
+var element = document.getElementByTagName('li')[3];
+element.parentNode.removeChild(element);
+```
+
+#### Cross Site Scripting
+Cross Site Scripting(XSS) an attacker placing malicious code into a site. Website often feature content created by many different people.Examples:-<br/>
+- Users can create profiles or add comments.
+- Multiple authors may contribute articles.
+- Data can come from third-party sites such as Facebook, Twitter, news tickers, and other feeds.
+- Files such as images and vedios may be uploaded<br/><br/>
+Data we don't have complete over is known as __untrusted data__, it must be hadled with care.
+
+#### Attribute Nodes
+Once we have an element node, we can use other properties and methods on that element node to access an change it attributes.<br/>
+There are  two steps accessing and updating attributes:-
+- First, select the element node that carries the attribute and follow it with a period symbol.
+- Then, use one of the methods or property below to work with that elemntt's attributes.<br/>
+
 
 
 
