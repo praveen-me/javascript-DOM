@@ -123,7 +123,7 @@ if(elements.length >= 1){
   var firstItem = element.item(0);
 }
 ```
-#### 2. The array method:-<br/>
+##### 2. The array method:-<br/>
 Array syntax is preffered over the `item()` method because it is faster. Before selecting a node from a nodeList check that it contains nodes. If we repeatedly use the nodeList, store it in a variable.
 ```
 var elements = document.getElementByClassName('hot');
@@ -131,6 +131,109 @@ if (elements.length >= 1){
   var firstItem = elements[0];
 }
 ```
+
+#### Selecting Elements using Class attributes
+```
+var element = document.getElementsyClassName('hot'){
+if(element.length >= 1){
+  element[2].className = 'cool';
+}
+```
+#### Selecting Elements by Tag name
+```
+var elements = document.getElementsByTagName('li'){
+if (elements.length > 0){
+  elements[1].className = 'cool';
+}
+```
+#### Selecting Elements Using CSS Selectors
+```
+var element = document.querySelector('li.hot');
+element.className = 'cool'
+var element = document.querySelectorAll('li.hot');
+element[1].className= 'normal';
+```
+
+#### Repeating Actions for Entire NodeList
+When you have nodeList, we can loop through each node in the collection and apply the same statements to each.
+```
+var hotItems = document.querySelectorAll('li.hot');
+for(var i = 0; i < hotItems.length; i++){
+  hotItems[i].className = 'cool';
+}
+```
+
+#### Looping Through a NodeList
+```
+var element = document.querySelectorAll('li.hot')
+if(element.length > 0){
+  for(var i = 0; i <element.length; i++){
+    element[i].className = 'cool';
+    }
+}
+```
+
+#### Tranversing the DOM
+When we have an element node, we can select another element in relation to it using thses five properties:-
+- `parentNode`
+- `previousSibling / nextSibling`
+- `firstChild / lastChild`
+
+#### Previous and Next Sibling
+```
+var startItem = document.getElementById('two');
+startItem.previousSibling.className = 'cool';
+startItem.nextSibling.className = 'normal';
+```
+
+#### First and Last Child
+```
+var startItem = document.getElementysByTagName('ul')[0];
+startItem.firstChild.className = 'cool';
+startItem.lastChild.className = 'normal';
+```
+#### Accessing and Update text with TextContent
+The `textContent` property allows us to collect or update just the text that is in the containing element (and its children).<br/>
+`<li id="one"><em>fresh</em>figs</li>`<br/>
+In that above element, to collect the text from the `<li>` element(and ignore any markup inside the element), we can use the `textContent` property on the containg `<li>` element.<br/>
+
+#### Accessing Text Only
+``` 
+var msg = document.getElementById('one').textContent;
+document.getElementById('get_it').textContent = msg;
+var set_it = document.getElementById('one');
+set_it.textContent = 'Dates';
+```
+
+#### Adding or Removing HTML content
+There are two ways to adding and removing content from a DOM tree:- 
+- The `innerHTML` property and
+- DOM Manipulation method
+
+##### 1. The `nnerHTML`method
+The `innerHTML` can be used on any element node. It is used both to retrieve and replace content. To update an element, new content is provided as a string. It can contain markup for descendent elements.
+
+##### 2. The DOM Manipulation
+DOM Manipulation easily targets individual nodes in the DOM tree, whereas `innerHTML` is better suited to updating entire fragments. It refers to a set of DOM methods that allows us to create element and text nodes, and then attach them to the DOM tree or remove from them to DOM tree.
+
+###### Adding Content
+To add content, we can use a DOM method to create new content one node at a time and store it in a variable. Then another DOM method is used to attach it to the  right place in the DOM tree.
+
+###### 1.Access and Update Text and Markup with `innerHTML`:
+The `innerHTML` property will get the content of an element and return it as one long string, including any markup that the elements contains.
+```
+var elementn = document.getElementById('one');
+element.innerHTML;
+element.innerHTML='<a href=\"http://www.github.com\">'+element.innerHTML+'</a>'
+```
+###### 2. Adding element using DOM Manipulation:
+DOM Manipulation offers another technique to add new content to a page (rather than `innerHTML`). It involves three steps:-</br>
+- Create the Element<br/>
+`createElement()`
+- ive it Content<br/>
+`createTextNode()`
+- pp
+
 
 
 
