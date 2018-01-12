@@ -18,8 +18,6 @@ The **Document Object Model (DOM)** specifies how browsers should create a model
 - [Live NodeList](#live-nodelist)
 - [Static NodeList](#static-nodelist)
 - [Selecting an Element from a NodeList](#selecting-an-element-from-a-nodelist)
-- [The item() method](#the-item-method)
-- [The Array Method](#the-array-method)
 - [Selecting Elements using Class attributes](#selecting-elements-using-class-attributes)
 - [Selecting Elements by Tag name](#selecting-elements-by-tag-name)
 - [Selecting Elements Using CSS Selectors](#selecting-elements-using-selectors)
@@ -105,6 +103,34 @@ NodeList look like array and are numbered like array, but they are not actually 
 - The `length` property tells us how many item are in nodeList.
 - The `item()` method returns a specific node from the nodeList when we tell it the index number of the item.
 
+#### Live NodeList
+In that , when our script updates the page, the nodeList is updated at the same time. The methods beginning `getElementsBY---` methods return live nodeList.
+
+#### Static NodeList
+When our script updates the page, the nodeList is not updated to reflect the changes mede by the script.The new methods that begin `querySelector()` return static nodeList.
+
+#### Selecting an Element from a NodeList
+There are two ways to select an element from a nodeList:-<br./>
+- The `item()` method  and
+- The array syntax<br/>
+Both require the index number of the element you want.<br/>
+
+##### 1. The `item()` method:-<br/>
+NodeList have a method called `item()` which will return an individual node from the nodeList. We specify the index number of the element we want the parameter of the  method.
+```
+var elements  = document.getElementsByClassName('hot');
+if(elements.length >= 1){
+  var firstItem = element.item(0);
+}
+```
+#### 2. The array method:-<br/>
+Array syntax is preffered over the `item()` method because it is faster. Before selecting a node from a nodeList check that it contains nodes. If we repeatedly use the nodeList, store it in a variable.
+```
+var elements = document.getElementByClassName('hot');
+if (elements.length >= 1){
+  var firstItem = elements[0];
+}
+```
 
 
 
